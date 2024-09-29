@@ -18,7 +18,6 @@ def track_list
 	track_data_raw = track_file.read.split("\n")
 
 	tracks = []
-	track_count = track_data_raw.count
 
 	track_name = ""
 	track_data_raw.each do |track|
@@ -45,5 +44,3 @@ loop do
 	puts track_list.sample if command == "track"
 	puts car_list.sample if command == "car"
 end
-
-track_list
